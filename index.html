@@ -16,6 +16,39 @@
     section { padding: 60px 20px; max-width: 1000px; margin: auto; }
     .features { display: flex; flex-wrap: wrap; gap: 20px; }
     .feature { flex: 1 1 300px; background: #f5f5f5; padding: 20px; border-radius: 8px; }
+    .platform-logos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .platform-logos img {
+      max-height: 50px;
+      max-width: 120px;
+      object-fit: contain;
+      transition: transform 0.2s;
+    }
+    .platform-logos img:hover {
+      transform: scale(1.05);
+    }
+    .client-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .client-logos img {
+      max-height: 60px;
+      max-width: 140px;
+      object-fit: contain;
+      transition: opacity 0.2s;
+    }
+    .client-logos img:hover {
+      opacity: 0.8;
+    }
     footer { background: #222; color: white; text-align: center; padding: 20px; }
     @media(max-width: 600px) {
       header h1 { font-size: 1.8em; }
@@ -41,12 +74,37 @@
     <a href="#contact">聯絡我們</a>
   </nav>
   <section id="about">
-    <h2>關於我們</h2>
-    <p>（略）</p>
+    <!-- 原本內容略 -->
   </section>
-  <section id="features"><p>（略）</p></section>
-  <section id="partners"><p>（略）</p></section>
-  <section id="contact"><p>（略）</p></section>
+  <section id="features">
+    <!-- 原本內容略 -->
+  </section>
+  <section id="partners">
+    <h2>合作品牌</h2>
+    <p>目前合作品牌遍及亞洲與歐洲，歡迎洽詢合作。</p>
+    <div class="client-logos">
+      <img src="brand1.png" alt="品牌1">
+      <img src="brand2.png" alt="品牌2">
+      <img src="brand3.png" alt="品牌3">
+      <img src="brand4.png" alt="品牌4">
+    </div>
+  </section>
+  <section id="platforms">
+    <h2>合作平台與通路網絡</h2>
+    <p>我們的合作平台橫跨全台主流線上購物與零售通路，涵蓋 95% 以上的消費者流量來源：</p>
+    <div class="platform-logos">
+      <a href="https://shopee.tw" target="_blank"><img src="shopee.png" alt="Shopee"></a>
+      <a href="https://momo.com.tw" target="_blank"><img src="momo.png" alt="MOMO購物網"></a>
+      <a href="https://www.pchome.com.tw" target="_blank"><img src="pchome.png" alt="PChome"></a>
+      <a href="https://www.books.com.tw" target="_blank"><img src="books.png" alt="博客來"></a>
+      <a href="https://www.coupang.com" target="_blank"><img src="coupang.png" alt="Coupang"></a>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>聯絡我們</h2>
+    <p>Email: info@yourcompany.com</p>
+    <p>LINE官方帳號：@yourlineid</p>
+  </section>
   <footer>
     <p>&copy; 2025 聯雅成國際企業有限公司 | LIAN YA CHENG LTD. | All rights reserved.</p>
   </footer>
